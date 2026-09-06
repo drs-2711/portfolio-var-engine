@@ -71,12 +71,6 @@ portfolio-var-engine/
 ├── data/
 │   ├── portfolio_prices.csv
 │   └── portfolio_returns.csv
-├── src/
-│   ├── data.py
-│   ├── portfolio.py
-│   ├── var_models.py
-│   ├── backtesting.py
-│   └── sensitivity.py
 ├── output/
 │   ├── var_backtest_results.csv
 │   ├── backtest_summary.csv
@@ -84,7 +78,6 @@ portfolio-var-engine/
 ├── notebooks/
 │   └── portfolio_var_analysis.ipynb
 ├── README.md
-└── requirements.txt
 ```
 
 ## Technologies
