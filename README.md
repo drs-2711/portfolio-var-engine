@@ -27,21 +27,12 @@ Historical daily prices are used to calculate daily asset returns. Portfolio ret
 weights = np.array([0.30, 0.20, 0.20, 0.15, 0.15])
 ```
 
-Portfolio P&L is then calculated as:
-
-\[
-P\&L_t = R_{p,t} 	imes Portfolio\ Value
-\]
-
 ### 2. VaR Models
 
 Three one-day VaR approaches are implemented:
 
 - **Historical VaR:** Uses the empirical distribution of historical portfolio returns.
-- **Variance-Covariance VaR:** Uses portfolio mean, volatility, and the covariance matrix:
-  \[
-  \sigma_p = \sqrt{w^T\Sigma w}
-  \]
+- **Variance-Covariance VaR:** Uses portfolio mean, volatility, and the covariance matrix.
 - **Monte Carlo VaR:** Simulates correlated asset returns using the estimated mean vector and covariance matrix and derives VaR from the simulated P&L distribution.
 
 VaR is calculated at **95% and 99% confidence levels** using a **250-trading-day rolling window**.
